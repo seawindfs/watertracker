@@ -1,0 +1,24 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>
+    Select the correct sensor for your application.
+  </p>
+
+{{#each model as |product|}}
+   <article class="product">
+    <h3>{{product.title}}</h3>
+    <div class="detail">
+      <span>Product:</span> {{product.title}}
+    </div>
+    <div class="detail">
+      <span>Sensors</span> {{product.sensors}}
+    </div>  
+  </article> 
+
+{{/each}}
+</div>
+<div>
+              <img src='../assets/images/solution3.jpg' width=50% heigth=50%>
+</div>
+
